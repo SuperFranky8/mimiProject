@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction:row
+            ;
+
+        }
+        .preview {
+            display: flex;
+        }
+
+
+    .result {border: 1px solid black;
+    width: 120px;
+    height: 25px;
+    font-size: 14px;
+    overflow: hidden;
+
+}
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <div>
+        <h2>Ввод отчета</h2>
+<form onsubmit="return false;" action="">
+    <input placeholder="Код отхода" type="text" class="input__othod input">
+
+    <input placeholder="Наличие на начало года" type="text" class="input__area1 input">
+    <input placeholder="Образовалось" type="text" class="input__area2 input">
+    <input placeholder="Доучтено" type="text" class="input__area3 input">
+<button class="btn__ready btn" onsubmit="return false;">Ready</button>
+</form>
+    </div>
+    <div class="preview">
+        <div class="result__kod result"></div>
+        <div class="result1 result"></div>
+        <div class="result2 result"></div>
+        <div class="result3 result"></div>
+
+    </div>
+
+</div>
+<div id="sum"> </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
